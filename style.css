@@ -5,38 +5,41 @@
     font-family: "Montserrat", sans-serif;
 }
 nav{
-background-color:#1C2833;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 50px 0  80px ;
-height: 80px;
-color: white;
+    background-color:#1C2833;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0  80px ;
+    height: 80px;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
 }
 
 .logo{
-font-size: 35px;
+    font-size: 35px;
 }
 nav ul{
-display: flex;
-list-style: none;
+    display: flex;
+    list-style: none;
 }
 nav ul li{
 /* background-color: white; */
-padding: 0 8px ;
+    padding: 0 8px ;
 }
 nav ul li a{
-color: white;
-text-decoration: none;
-text-transform: uppercase;
-padding: 7px 13px;
-border-radius: 5px;
-font-weight: bold;
-transition: .5s;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: .5s;
 
 }
 nav ul li a:hover , nav ul li a.acitive-nav{
-background-color: #566573;
+    background-color: #566573;
 }
 #click{
     display: none;
@@ -58,7 +61,7 @@ background-color: #566573;
         width: 100%;
         padding: 50px 0;
         align-items: center;
-        top: 80px;
+        top:80px;
         flex-direction: column;
         left: -100%;
         transition: all .5s ease;
@@ -84,3 +87,70 @@ background-color: #566573;
 }
 
    /* responsive navigation code end  hare */
+
+header{
+    background-image: url(img/header.jpg);
+    height: 92vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+   /* services section code start hare */
+#services-section{
+    background-color:#14223D ;
+    padding: 50px 0px 100px 0px;
+}
+.services-item-parent{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin: 0px 200px;
+    grid-gap: 30px;
+}
+.services-single-item{
+    background-color: white;
+    padding: 20px 10px;
+    text-align: center;
+    border: 5px solid green;
+    box-shadow: 5px 5px 10px gray;
+}
+.services-single-item i{
+    font-size: 40px;
+    margin-bottom:15px ;
+}
+.services-single-item h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.Services-title{
+     font-size: 30px;
+     text-align: center;
+     color: white;
+     margin-bottom: 30px;
+     letter-spacing: 3px;
+}
+   /* services section code end hare */
+@media only screen  and (max-width:688px){
+     /* services section code start hare */
+    .services-item-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px 30px;
+        grid-gap: 20px;
+    }
+     /* services section code end hare */
+}
+
+@media only screen  and (min-width:689px) and (max-width:1327px){
+     /* services section code start hare */
+    .services-item-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin: 0px 70px;
+        grid-gap: 30px;
+    }
+     /* services section code end hare */
+}
