@@ -423,6 +423,62 @@ legend i{
 }
 /*  takecare section code start hare  */
 
+/* footer section code start hare */
+footer{
+    background-color: #143C57;
+    padding: 50px 0;
+}
+.footer-parent{
+    margin-left:250px;
+    margin-right: 200px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    text-align: justify;
+
+}
+.footer-parent > div >h3{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+.footer-parent > div >h3 >span{
+    color: yellow;
+}
+
+.footer-single-item-1 p{
+    /* text-align: justify; */
+    word-break: break-all;
+    width: 70%;
+}
+.footer-single-item-2 p{
+    margin-bottom: 10px;
+}
+
+.footer-single-item-2 p i{
+    font-size: 14px;
+    margin-right: 4px;
+}
+ 
+
+
+.footer-icon a{
+    text-decoration: none;
+    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    place-content: center;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+/* footer section code end hare */
+
+
+
 @media only screen  and (max-width:900px){
      /* services section code start hare */
     .services-item-parent{
@@ -536,6 +592,37 @@ legend i{
 
 
     /*  takecare section code end hare  */
+
+    /* footer section code start hare */
+footer{
+    background-color: #143C57;
+    padding: 50px 0;
+}
+.footer-parent{
+    margin-left: 20px;
+    margin-right: 20px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 20px;
+    text-align: center;
+
+}
+.footer-parent > div{
+    margin-bottom: 30px;
+}
+ 
+.footer-single-item-1{
+    padding: 0px 30px;
+}
+.footer-single-item-1 p{
+    width: 100%;
+}
+.footer-single-item-2 p{
+    margin-bottom: 10px;
+
+}
+ 
+/* footer section code end hare */
     
 }
 
@@ -632,5 +719,29 @@ legend i{
         width: 100%;
     }
 /*  takecare section code end hare  */
+    /* footer section code start hare */
+footer{
+    background-color: #143C57;
+    padding: 50px 0;
+}
+.footer-parent{
+    margin-left:70px;
+    margin-right: 70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 30px;
+    text-align: justify;
+
+}
+.footer-single-item-1 p{
+    /* text-align: justify; */
+    word-break: break-all;
+    width: 100%;
+}
+ 
+
+ 
+ 
+/* footer section code end hare */
 
 }
